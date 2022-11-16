@@ -17,16 +17,36 @@ Uas = int(uas_295*40/100)
 nilai_295 = Tugas+Uts+Uas
 
 # tabel data dan nilai mahasiswa
-x.field_names = ["Nama", "NIM", "Tugas", "UTS", "UAS", "Nilai Akhir", ]
-x.add_row([nama_295, nim_295, tugas_295, uts_295, uas_295, nilai_295, ])
-print(x)
+# x.field_names = ["Nama", "NIM", "Tugas", "UTS", "UAS", "Nilai Akhir", ]
+# x.add_row([nama_295, nim_295, tugas_295, uts_295, uas_295, nilai_295, ])
+# print(x)
 
 # Percabangan grade Nilai akhir
 if nilai_295 >= 75 and nilai_295 < 100:
-    print('GRADE NILAI ANDA = A')
+    print()
+    x.field_names = ["Nama", "NIM", "Tugas",
+                     "UTS", "UAS", "Nilai Akhir", "GRADE NILAI"]
+    x.add_row([nama_295, nim_295, tugas_295,
+              uts_295, uas_295, nilai_295, "A"])
+    print(x)
 elif nilai_295 >= 70 and nilai_295 < 75:
-    print('GRADE NILAI ANDA = B')
+    print()
+    x.field_names = ["Nama", "NIM", "Tugas",
+                     "UTS", "UAS", "Nilai Akhir", "GRADE NILAI"]
+    x.add_row([nama_295, nim_295, tugas_295,
+              uts_295, uas_295, nilai_295, "B"])
+    print(x)
 elif nilai_295 >= 46 and nilai_295 < 60:
-    print('GRADE NILAI ANDA = C')
+    print()
+    x.field_names = ["Nama", "NIM", "Tugas",
+                     "UTS", "UAS", "Nilai Akhir", "GRADE NILAI"]
+    x.add_row([nama_295, nim_295, tugas_295,
+              uts_295, uas_295, nilai_295, "C"])
+    print(x)
 elif nilai_295 >= 0 and nilai_295 < 45:
-    print('GRADE NILAI ANDA = D')
+    print()
+    x.field_names = ["Nama", "NIM", "Tugas",
+                     "UTS", "UAS", "Nilai Akhir", "GRADE NILAI"]
+    x.add_row([nama_295, nim_295, tugas_295,
+              uts_295, uas_295, nilai_295, "D"])
+    print(x)
